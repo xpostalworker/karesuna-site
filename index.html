@@ -1,18 +1,22 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Karesuna Method — Pricing</title>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Karesuna Method — Assistant Launch Pad Kit</title>
-  <meta name="description" content="Start assistants inside your world — not the web. A context-first onboarding kit for predictable, shippable outputs in 25 minutes.">
-  <link rel="icon" href="https://xpostalworker.github.io/karesuna-site/favicon.ico">
+  <meta name="description" content="Start assistants inside your world — not the web. Karesuna is a context-first onboarding kit for predictable, shippable outputs in 25 minutes.">
+  <link rel="icon" href="/favicon.ico">
+  <!-- Open Graph / Twitter -->
   <meta property="og:title" content="Karesuna Method — Assistant Launch Pad Kit">
-  <meta property="og:description" content="Start assistants inside your world — not the web. A context-first onboarding kit for predictable, shippable outputs in 25 minutes.">
+  <meta property="og:description" content="Start assistants inside your world — not the web.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://xpostalworker.github.io/karesuna-site/Karesuna_Hero_Mockup.png">
   <meta property="og:url" content="https://xpostalworker.github.io/karesuna-site/">
+  <meta property="og:image" content="https://xpostalworker.github.io/karesuna-site/Karesuna_Hero_Mockup.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Karesuna Method — Assistant Launch Pad Kit">
-  <meta name="twitter:description" content="Start assistants inside your world — not the web. A context-first onboarding kit for predictable, shippable outputs in 25 minutes.">
+  <meta name="twitter:description" content="Start assistants inside your world — not the web.">
   <meta name="twitter:image" content="https://xpostalworker.github.io/karesuna-site/Karesuna_Hero_Mockup.png">
+  <!-- Product schema -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -30,5 +34,121 @@
   }
   </script>
 
+  <style>
+    :root{
+      --blue:#003366; --gray:#2F3437; --teal:#009688; --bg:#f5f7fa; --card:#ffffff;
+      --muted:#5b6670; --ring: rgba(0,54,102,.35); --shadow: 0 6px 24px rgba(0,0,0,.08); --radius: 16px;
+    }
+    @media (prefers-color-scheme: dark){
+      :root{ --bg:#0f1316; --card:#141a1f; --muted:#b7c2cc; --shadow: 0 8px 30px rgba(0,0,0,.45); --ring: rgba(0,150,136,.45);}
+    }
+    body{ margin:0; font: 16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif; color: var(--gray); background: var(--bg);}
+    a{ color: var(--blue); text-decoration: none; }
+    header{ text-align:center; padding: 28px 20px 0; }
+    header h1{ margin:0; color: var(--blue); font-size: clamp(28px,3.4vw,42px); }
+    header p{ color: var(--muted); margin: 6px 0 20px; }
+    #pricing{ padding: 64px 20px; }
+    #pricing .container{ max-width: 1120px; margin: 0 auto; }
+    #pricing h2{ color: var(--blue); font-size: clamp(28px,3.4vw,40px); margin: 0 0 8px; text-align:center; }
+    #pricing p.lead{ color: var(--muted); text-align:center; margin: 0 auto 32px; max-width: 760px; font-size: 18px; }
+    .grid{ display: grid; gap: 24px; grid-template-columns: repeat(1, minmax(0,1fr)); }
+    @media (min-width: 860px){ .grid{ grid-template-columns: repeat(3, minmax(0,1fr)); } }
+    .card{ position: relative; background: var(--card); border-radius: var(--radius); box-shadow: var(--shadow);
+      border: 1px solid rgba(0,0,0,.06); padding: 28px; display:flex; flex-direction:column; }
+    .badge{ position:absolute; top: -12px; right: 16px; background: var(--teal); color:#fff; font-weight:700;
+      padding: 8px 12px; border-radius: 999px; font-size: 12px; letter-spacing:.02em; }
+    .plan{ font-size: 14px; color: var(--muted); letter-spacing:.08em; text-transform:uppercase; margin-bottom:6px; }
+    .title{ font-size: 22px; color: var(--blue); font-weight: 800; margin: 0 0 8px; }
+    .price{ font-size: 40px; color: var(--gray); font-weight: 800; margin: 8px 0 2px; }
+    .per{ color: var(--muted); font-size: 14px; margin-bottom: 12px; }
+    .desc{ color: var(--muted); margin-bottom: 16px; }
+    .features{ list-style:none; padding:0; margin:0 0 20px; display:grid; gap:10px; }
+    .features li{ display:flex; gap:10px; align-items:flex-start; color: var(--gray); }
+    .features .tick{ display:inline-grid; place-items:center; width:22px; height:22px; border-radius:6px; background: rgba(0,150,136,.12); color: var(--teal); font-weight:900; }
+    .cta{ margin-top: auto; display:flex; gap:12px; flex-wrap:wrap; }
+    .btn{ appearance: none; border:1px solid var(--blue); color:#fff; background: var(--blue);
+      border-radius: 12px; padding: 12px 16px; font-weight: 700; cursor: pointer; text-align:center; flex: 1 1 180px; outline-offset: 2px; }
+    .btn.secondary{ background: transparent; color: var(--blue); }
+    .btn:hover{ filter: brightness(1.05); }
+    .btn:focus-visible{ box-shadow: 0 0 0 4px var(--ring); }
+    .foot{ text-align:center; color: var(--muted); margin-top: 28px; font-size: 14px; }
+  </style>
 </head>
-<body><h1>Karesuna Method</h1><p>Upload the full page later.</p></body></html>
+<body>
+  <header>
+    <h1>Karesuna Method™ — Assistant Launch Pad Kit</h1>
+    <p>Start assistants <strong>inside your world</strong> — not the web.</p>
+  </header>
+
+  <!-- Pricing Section -->
+  <section id="pricing" aria-labelledby="pricing-title">
+    <div class="container" role="region" aria-label="Karesuna pricing">
+      <h2 id="pricing-title">Karesuna Method™ — Pricing</h2>
+      <p class="lead">Start assistants <strong>inside your world</strong> — with codex, handoff rules, and a no-browse default — so you ship predictable results in 25 minutes.</p>
+
+      <div class="grid">
+        <!-- Starter -->
+        <article class="card" aria-labelledby="starter-title">
+          <div class="plan">Starter</div>
+          <h3 id="starter-title" class="title">Karesuna Starter</h3>
+          <div class="price">$19</div>
+          <div class="per">one-time</div>
+          <p class="desc">Copy-paste launch, perfect for solo creators.</p>
+          <ul class="features">
+            <li><span class="tick" aria-hidden="true">✓</span> Prompt Pack: Threshold / Pathflow / Authorize / Stand-down</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Public Onboarding Guide (PDF)</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Business-card Threshold PDFs (10-up)</li>
+          </ul>
+          <div class="cta">
+            <a class="btn" href="#checkout-starter" aria-label="Get Karesuna Starter for $19">Get Starter</a>
+            <a class="btn secondary" href="#whats-inside" aria-label="See everything inside Karesuna">See what’s inside</a>
+          </div>
+        </article>
+
+        <!-- Creator (recommended) -->
+        <article class="card" aria-labelledby="creator-title">
+          <div class="badge" aria-hidden="true">Best start</div>
+          <div class="plan">Creator</div>
+          <h3 id="creator-title" class="title">Karesuna Creator</h3>
+          <div class="price">$59</div>
+          <div class="per">one-time</div>
+          <p class="desc">Everything you need to run Karesuna end-to-end.</p>
+          <ul class="features">
+            <li><span class="tick" aria-hidden="true">✓</span> Everything in Starter</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Visual Cue Codex (Master + Autonomy & Flow Addendum)</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Lawrence Webb Arc Worksheet + Arch Diagram</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Posters + Letterhead (public & internal)</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Editable Threshold Card & Pathfinder Brief (DOCX)</li>
+          </ul>
+          <div class="cta">
+            <a class="btn" href="#checkout-creator" aria-label="Get Karesuna Creator for $59">Get Creator</a>
+            <a class="btn secondary" href="#faq" aria-label="Read FAQs">Read FAQs</a>
+          </div>
+        </article>
+
+        <!-- Pro -->
+        <article class="card" aria-labelledby="pro-title">
+          <div class="plan">Pro</div>
+          <h3 id="pro-title" class="title">Karesuna Pro</h3>
+          <div class="price">$199</div>
+          <div class="per">one-time</div>
+          <p class="desc">For agencies & teams shipping to clients.</p>
+          <ul class="features">
+            <li><span class="tick" aria-hidden="true">✓</span> Everything in Creator</li>
+            <li><span class="tick" aria-hidden="true">✓</span> All editable source files + co-branding allowance</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Workshop slide starter</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Client-use license</li>
+            <li><span class="tick" aria-hidden="true">✓</span> Priority support channel</li>
+          </ul>
+          <div class="cta">
+            <a class="btn" href="#checkout-pro" aria-label="Get Karesuna Pro for $199">Get Pro</a>
+            <a class="btn secondary" href="#guarantee" aria-label="View guarantee">View guarantee</a>
+          </div>
+        </article>
+      </div>
+
+      <p class="foot" id="guarantee">14-day guarantee if you don’t ship something in 48 hours using Karesuna. Prices may increase after intro launch.</p>
+    </div>
+  </section>
+</body>
+</html>
